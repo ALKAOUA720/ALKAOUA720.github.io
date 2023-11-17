@@ -1,2 +1,0 @@
-- 仓库地址：https://github.com/ALKAOUA720/common-ui-react
-- 访问地址：https://alkaoua720.github.io/
