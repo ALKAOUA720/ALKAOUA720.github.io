@@ -9,5 +9,11 @@ export function getBingImage() {
     )
     .then((res) => {
       return `https://www.bing.com${res.data["images"][0]["url"]}_1920x1080.jpg`;
+    })
+    .catch(() => {
+      api.get<BingImageResponse>(
+        `https://www.bing.com/HPImageArchive.aspx?format=js&idx=${randomDay}&n=1&mkt=zh-CN`
+      );
+      return "";
     });
 }
