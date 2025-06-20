@@ -8,9 +8,8 @@ function App() {
   const [count, setCount] = useState(0);
   const [backgroundImage, setBackgroundImage] = useState("");
 
-  const init = async () => {
-    const imgUrl = await getBingImage();
-    console.log(imgUrl);
+  const init = () => {
+    const imgUrl = getBingImage();
     setBackgroundImage(imgUrl);
   };
 
